@@ -5,73 +5,96 @@
 }
 
 body {
-  font-family: "Outfit", sans-serif;
-  font-size: 16px;
+  padding: 0;
+  margin: 0;
   background-color: hsl(30, 54%, 90%);
   color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
   line-height: 1.6;
-  display: flex;
-  justify-content: center;
-}
-
-.recipe {
-  background-color: white;
-  padding: 1.5rem;
-  max-width: 375px;
-}
-
-.recipe__image {
-  width: 100%;
   display: block;
 }
 
+.recipe {
+  width: 100%;
+  max-width: 375px;
+  background-color: white;
+  padding: 0 1rem 2.5rem;
+  margin: 0 auto;
+}
+
+.recipe__image {
+  width: calc(100% + 2rem);
+  margin: 0 0 2.5rem -1rem;
+  display: block;
+  border-radius: 0;
+}
+
 .recipe__title {
+    font-family: "Young Serif", serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 1rem 0 0.75rem;
+    color: hsl(24, 5%, 18%);
+    line-height: 1.1;
+}
+
+.recipe__description {
+  margin-bottom: 2rem;
+}
+
+.section-title {
   font-family: "Young Serif", serif;
-  font-size: 2rem;
-  margin: 1.5rem 0 1rem;
-  color: hsl(24, 5%, 18%);
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: hsl(14, 45%, 36%);
 }
 
 .prep-time {
   background-color: hsl(330, 100%, 98%);
   padding: 1rem;
+  padding-bottom: 1rem;
   border-radius: 10px;
-  margin: 2rem 0;
+  margin: 2rem;
 }
 
-.pre-time__title {
+.prep-time__title {
   color: hsl(332, 51%, 32%);
   font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.prep-time__list li {
   margin-bottom: 0.5rem;
 }
 
 ul,
 ol {
-  margin-left: 1.2rem;
+  margin-left: 1.25rem;
   margin-bottom: 1.5rem;
 }
 
 ul li,
 ol li {
   padding-left: 0.5rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
 
 ul li::marker {
   color: hsl(14, 45%, 36%);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 ol li::marker {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: hsl(14, 45%, 36%);
 }
 
 .ingredients,
-.instructions,
-.nutrition {
+.instructions {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid hsl(30, 18%, 87%);
   margin-bottom: 1.5rem;
@@ -95,13 +118,13 @@ ol li::marker {
 }
 
 .nutrition-table td {
-  padding: 0.75rem;
+  padding: 0.75rem 0;
 }
 
-.nutrition-table td:first-child {
+.nutrition-table td:last-child strong {
   font-family: "Outfit", sans-serif;
-  color: hsl(14, 45%, 36%);
   font-weight: 700;
+  color: hsl(14, 45%, 36%);
 }
 
 @media (min-width: 1440px) {
