@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Example:
 
-![recipe-page](https://github.com/user-attachments/assets/ae0576a7-179a-4e02-b6bf-1d0842d4cd22)
+![recipe-page](https://github.com/user-attachments/assets/7b743155-e554-454c-9ebb-44406b2bfd49)
 
 ### Links
 
